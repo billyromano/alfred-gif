@@ -6,6 +6,7 @@ const path  = require("path");
 const { lookup } = require("lookup-dns-cache");
 
 const { data: MOCK_DATA } = require("./mock-giphy-data.json");
+const USE_MOCK            = false;
 const terminate           = require("./terminate");
 
 // https://nodejs.org/api/http.html#http_http_get_options_callback
@@ -117,6 +118,8 @@ function parseData(data, query) {
                 .replace(/[^0-9a-z ]/gi, "")
                 .replace(" ", "-");
     let htmlPath = `${CACHE_DIR}/_${htmlName}.html`;
+
+    !USE_MOCK && ({ data } = data);
     // let gifInfos = data.results.map((item) => {
     let gifInfos = data.map((item) => {
         // Example tinygif url:
@@ -254,9 +257,7 @@ const server = http.createServer(function (req, res) {
         });
         response.on("end", () => {
             try {
-                const data   = JSON.parse(rawData);
-                // test with mock data
-                // const data   = MOCK_DATA;
+                const data = USE_MOCK && MOCK_DATA || JSON.parse(rawData);
                 const parsed = parseData(data, query);
                 res.write(JSON.stringify(parsed.alfredResponse));
                 res.end();
