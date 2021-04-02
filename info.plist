@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>mr.pennyworth.gif</string>
+	<string>billyromano.gif</string>
 	<key>category</key>
 	<string>Internet</string>
 	<key>connections</key>
@@ -185,9 +185,9 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Mr. Pennyworth</string>
+	<string>Billy Romano</string>
 	<key>description</key>
-	<string>Search Tenor for GIFs</string>
+	<string>Search Giphy for GIFs</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -209,7 +209,7 @@ function is_server_up() {
 }
 
 function start_server() {
-  ./gif-downloader.bin &gt; /tmp/alfred-gif-search.log 2&gt;&amp;1 &amp; 
+  ./gif-downloader.bin &gt; /tmp/alfred-gif-search.log 2&gt;&amp;1 &amp;
 }
 
 if ! is_server_up; then
@@ -312,13 +312,13 @@ if [[ -z "$result_json" ]]; then
 
 cat &lt;&lt; EOF
 {"items": [
-  {"title": "Search Tenor for \"$query\"",
+  {"title": "Search Giphy for \"$query\"",
    "subtitle": "↩: search",
    "arg": "$query"}]}
 EOF
 
 else
-  
+
   echo "$result_json"
 
 fi</string>
@@ -329,7 +329,7 @@ fi</string>
 				<key>subtext</key>
 				<string>type query and press ↩</string>
 				<key>title</key>
-				<string>Search Tenor for GIFs</string>
+				<string>Search Giphy for GIFs</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -781,6 +781,6 @@ rm *.gif</string>
 	<key>version</key>
 	<string>0.0.5</string>
 	<key>webaddress</key>
-	<string>https://github.com/mr-pennyworth/alfred-gif</string>
+	<string>https://github.com/billyromano/alfred-gif</string>
 </dict>
 </plist>

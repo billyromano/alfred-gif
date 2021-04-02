@@ -47,7 +47,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       .appendingPathComponent("Caches")
       .appendingPathComponent("com.runningwithcrayons.Alfred")
       .appendingPathComponent("Workflow Data")
-      .appendingPathComponent("mr.pennyworth.gif")
+      .appendingPathComponent("billyromano.gif")
 
   lazy var selectedGif: URL = gifCacheDir.appendingPathComponent("selected.gif")
   var selectedGifWebUrl: String = ""

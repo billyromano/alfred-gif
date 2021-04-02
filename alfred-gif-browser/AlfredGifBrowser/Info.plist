@@ -39,7 +39,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>mr.pennyworth.AlfredGifBrowser</string>
+			<string>billyromano.AlfredGifBrowser</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>alfred-gif-browser</string>

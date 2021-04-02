@@ -1,13 +1,13 @@
 {
   "name": "gif-downloader",
   "version": "0.0.1",
-  "description": "Search and download gifs from Tenor",
+  "description": "Search and download gifs from Giphy",
   "bin": "gif-downloader.js",
   "scripts": {
     "pkg": "pkg -d --targets node12-macos-x64 . --output gif-downloader",
     "start": "node gif-downloader.js"
   },
-  "author": "Mr. Pennyworth",
+  "author": "Billy Romano",
   "pkg": {
     "assets": [
       "gif-navigator.js",
