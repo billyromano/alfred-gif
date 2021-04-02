@@ -1,12 +1,14 @@
-# Alfred GIF Search
+# Alfred GIF Search for Giphy
 
-Search GIFs on [Tenor](https://tenor.com) from [Alfred](https://alfredapp.com).
+**Search GIFs on [Giphy](https://giphy.com) using [Alfred](https://alfredapp.com).**
+
+*Based on the [Alfred Gif](https://github.com/mr-pennyworth/alfred-gif) workflow using Tenor by [mr-pennyworth](https://github.com/mr-pennyworth)*
 
 Here's an example of searching and inserting a GIF in a google doc:
 ![](demo-media/alfred-gif-search-with-drag-thumbnail.gif)
 
 ### Installation
-1. Download the [latest release](https://github.com/mr-pennyworth/alfred-gif/releases/latest/download/GIF.Search.alfredworkflow).
+1. Download the [latest release](https://github.com/billyromano/alfred-gif/releases/latest/download/GIF.Search.alfredworkflow).
 2. In Alfred, run `.setup-gif-search`.
 
 ### Usage
